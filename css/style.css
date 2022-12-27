@@ -1,0 +1,127 @@
+nav {
+  padding: 20px 30px;
+  background: #000;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo img {
+  width: 175px;
+}
+.header ul li {
+  display: inline-block;
+  margin-left: 62px;
+}
+.header a {
+  color: var(--nav-link);
+  text-decoration: none;
+}
+.header button.nav-btn {
+  padding: 10px 20px;
+  border-radius: 31px;
+  cursor: pointer;
+}
+
+.slider {
+  height: 100vh;
+}
+.slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+.slider .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider h3 {
+  z-index: 297;
+  width: 517px;
+  min-height: 28px;
+  background-color: rgba(255, 255, 255, 0.42);
+  line-height: 91px;
+  font-size: 49px;
+  position: absolute;
+  top: 304px;
+  margin-left: 339px;
+}
+.slider h1 {
+  z-index: 297;
+  width: 736px;
+  min-height: 87px;
+  background-color: rgba(255, 255, 255, 0.42);
+  line-height: 86px;
+  font-size: 72px;
+  position: absolute;
+  top: 412px;
+  margin-left: 249px;
+}
+
+#servicesection {
+  background: rgba(108, 117, 125, 0.0901960784);
+  padding: 44px;
+}
+#servicesection h3 {
+  min-height: 77px;
+  position: relative;
+  text-align: center;
+  font-family: lora, serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+}
+#servicesection .service {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+}
+#servicesection .service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #ffc107;
+}
+#servicesection .service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#servicesection .service:hover {
+  background: #ffc107;
+  color: #fff;
+  transform: scale(1.05);
+}
+#servicesection .service:hover i {
+  color: #fff;
+}
+#servicesection h1 {
+  font-weight: 500;
+  font-size: 42px;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+#roomdetails .text {
+  background: #000;
+  color: wheat;
+}/*# sourceMappingURL=style.css.map */

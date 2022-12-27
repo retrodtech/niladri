@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,57 +9,181 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <title>Hotel Niladri Inn</title>
 </head>
 <nav>
-    <div class="header">
-        <div class="row">
-    <div class="col-md-4">
-    <div class="logo">
-        <img src="image/niladri-logo.webp" alt="">
+    <div class="container">
+        <div class="header">
+
+
+            <div class="logo" style=" width: 120px;">
+                <img src="image/niladri-logo.webp " alt="">
+            </div>
+
+
+
+            <ul>
+                <li class="active"><a href="index.html"><b>Home</b></a></li>
+                <li><a href="about.html"><b>About</b></a></li>
+                <li><a href="contact.html"><b>Gallery</b></a></li>
+                <li><a href="Gallery.html"><b>Blog</b></a></li>
+                <li><a href="Gallery.html"><b>Contact us</b></a></li>
+
+                <li class="booking">
+
+
+                    <a href="#">
+                        <button class="nav-btn">Book Now</button>
+                    </a>
+
+
+                </li>
+
+
+
+                <li>
+
+                    <div class="whatapp_page">
+
+                        <a target="" href=""><img src="" alt=""><span>WhatsApp</span></a>
+
+                    </div>
+
+                </li>
+            </ul>
+
+
+        </div>
     </div>
 
-</div>
-<div class="col-md-4">
-    <ul><li class="active"><a href="index.html"><b>Home</b></a></li>
-        <li><a href="about.html"><b>About</b></a></li>
-        <li><a href="contact.html"><b>Gallery</b></a></li>
-        <li><a href="Gallery.html"><b>Blog</b></a></li>
-        <li><a href="Gallery.html"><b>Contact us</b></a></li>
-
-     
-
-
-    </ul>
-</div>
-<div class="col-md-4">
-    
-    <ul>
-        <li class="booking">
-
-            <a target="" class="waLink spacial_btn" href=""> Book Now</a>
-
-        </li>
-
-        
-
-        <li>
-
-              <div class="whatapp_page">
-
-                    <a target="" href="" ><img src="image/whatsapp-icon.gif" alt=""><span>WhatsApp</span></a>
-
-               </div>
-
-        </li>
-    </ul>
-</div>
-
-</div>
-</div>
-
 </nav>
+
+
 <body>
-    
+
+    <div class="slider mySwiper">
+
+       
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/room-1.webp" alt=""></div>
+            <div class="swiper-slide"><img src="image/room-2.webp" alt=""></div>
+            <div class="swiper-slide"><img src="image/room-4.webp" alt=""></div>
+            <div class="swiper-slide"><img src="image/room-5.webp" alt=""></div>
+            
+          </div>
+     
+        <h3>RESERVE A ROOM FOR</h3>
+        <h1>FAMILY VACATION</h1>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+     
+    </div>
+ 
+    <section id="servicesection">
+        <div class="container">
+            <h3>Our Facilities</h3>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fas fa-wifi"></i>
+                        <h2>Wifi</h2>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fas fa-washer"></i>
+                        <h2>  Laundry Facility</h2>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fas fa-wine-glass-alt"></i>
+                        <h2>Mini Bar</h2>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fas fa-car"></i>
+                        <h2>PickDrop</h2>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fas fa-hamburger"></i>
+                        <h2>Breakfast</h2>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fas fa-swimming-pool"></i>
+                        <h2>Swimming Pool</h2>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section id="roomdetails">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="img left">
+                        <a href=""><img src="image/05_js6iG75t7.webp" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text">
+                    <div class="content">
+                        <div class="cont text-left">
+                            <div class="info">
+                                <h6>room</h6>
+                            </div>
+                            <h4>The Hospital</h4>
+                            <p></p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+   
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        });
+      </script>
 </body>
+
 </html>

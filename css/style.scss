@@ -1,0 +1,163 @@
+
+nav{
+
+    padding: 20px 30px;
+    background: #000;
+    color: #fff;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  .logo  img {
+        width: 175px;
+    }
+
+    ul{
+        li{
+            display: inline-block;
+            margin-left: 62px;
+        }
+    }
+    a {
+        color: var(--nav-link);
+        text-decoration: none;
+       
+    }
+    button.nav-btn {
+        padding: 10px 20px;
+        border-radius: 31px;
+        cursor: pointer;
+       
+    }
+
+}
+.slider{
+
+    
+        height: 100vh;
+       
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      h3 {
+        z-index: 297;
+        width: 517px;
+        min-height: 28px;
+        background-color: rgba(255, 255, 255, 0.42);
+        line-height: 91px;
+        font-size: 49px;
+        position: absolute;
+        top: 304px;
+        margin-left: 339px;
+    }
+
+    
+     h1 {
+        z-index: 297;
+        width: 736px;
+        min-height: 87px;
+        background-color: rgb(255 255 255 / 42%);
+        line-height: 86px;
+        font-size: 72px;
+        position: absolute;
+        top: 412px;
+        margin-left: 249px;
+    }
+}
+
+
+#servicesection{
+
+    background: #6c757d17;
+    padding: 44px;
+    h3{
+     min-height: 77px;
+    position: relative;
+    text-align: center;
+    font-family: lora, serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    }
+
+
+   
+      .service {
+        text-align: center;
+        padding: 25px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        background: transparent;
+        transition: transform 0.5s, background 0.5s;
+      }
+      
+      .service i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color:#ffc107;
+      }
+      
+      .service h2 {
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      
+      .service:hover {
+        background: #ffc107;
+        color: #fff;
+        transform: scale(1.05);
+      }
+      
+      .service:hover i {
+        color: #fff;
+      }
+    
+      h1 {
+        font-weight: 500;
+        font-size: 42px;
+        position: relative;
+       
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+#roomdetails{
+   .text {
+        background: #000;
+        color: wheat;
+    }
+}

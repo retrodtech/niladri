@@ -1,0 +1,675 @@
+#todayCheckIn,
+#todayCheckOut,
+#qpTodayCheckIn,
+#qpTodayCheckOut {
+  cursor: pointer;
+}
+
+* {
+  caret-color: rgba(0, 0, 0, 0);
+}
+
+#indexSlidBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 102;
+  visibility: hidden;
+  opacity: 0;
+}
+#indexSlidBar .closeContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.231372549);
+  transition: 0.4s ease-in-out;
+}
+#indexSlidBar .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e70303;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 0 50px 50px 0;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2117647059) inset;
+}
+#indexSlidBar .contatent {
+  position: absolute;
+  width: 350px;
+  background: white;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transform: translateX(100%);
+  z-index: 4;
+  transition: 0.4s ease-in-out;
+}
+#indexSlidBar.show {
+  visibility: visible;
+  opacity: 1;
+}
+#indexSlidBar.show .contatent {
+  transform: translateX(0);
+}
+#indexSlidBar table {
+  margin: 30px 0;
+  width: 100%;
+}
+#indexSlidBar td {
+  padding: 10px 15px;
+  font-size: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.0588235294);
+}
+
+.dFlex {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.dFlex.aic {
+  align-items: center;
+}
+.dFlex.jcc {
+  justify-content: center;
+}
+.dFlex.jcsb {
+  justify-content: space-between;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.s25 {
+  width: 100%;
+  height: 25px;
+  display: block;
+}
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block !important;
+}
+
+.mr8 {
+  margin-right: 8px;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+#tabContainer {
+  padding-left: 2vw;
+  padding-right: 10vw;
+  padding-top: 5vh;
+  padding-bottom: 20vh;
+}
+
+.tabs-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs-nav li {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: #34495E;
+  margin-right: 5px;
+}
+
+.tabs-nav a {
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Active tab */
+.tabs-nav li.active {
+  background: #FFF;
+  color: #000;
+}
+
+.tabs-nav li.active a {
+  color: inherit;
+}
+
+/* Tab content */
+.tabs-content {
+  border: 1px solid #34495E;
+  padding: 10px;
+  background: #FFF;
+  margin-top: -1px;
+  overflow: hidden;
+}
+
+.tabs-content IMG {
+  margin-right: 10px;
+}
+
+/* Hide all but first content div */
+.tabs-content .tabContent:not(:first-child) {
+  display: none;
+}
+
+.tabs-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.paymentStatusList li {
+  display: inline-block;
+}
+
+.paymentStatusList li input {
+  opacity: 0;
+}
+
+.paymentStatusList li label {
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #404040;
+  display: flex;
+  cursor: pointer;
+}
+.paymentStatusList li label .icon {
+  display: none;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 12px;
+  margin-left: 9px;
+}
+
+.paymentStatusList li input:checked ~ label {
+  color: #000;
+  font-weight: 700;
+}
+.paymentStatusList li input:checked ~ label .icon {
+  display: inline-flex;
+}
+.paymentStatusList li input:checked ~ label .icon.check {
+  background: #006400;
+  color: white;
+}
+.paymentStatusList li input:checked ~ label .icon.times {
+  background: #ff0000;
+  color: white;
+}
+
+.paymentStatusList {
+  padding: 15px 0 0;
+}
+
+#inventory {
+  padding: 50px 0;
+}
+#inventory th.deactivate {
+  background: #e74f5e;
+  color: white;
+}
+#inventory td.deactivate {
+  background: #fddbdf;
+}
+#inventory tr input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1215686275);
+}
+
+.inventoryRateRow {
+  display: none;
+}
+.inventoryRateRow.show {
+  display: contents;
+}
+.inventoryRateRow .body {
+  display: contents;
+}
+
+.in_btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1803921569);
+  transition: 0.3s ease-in-out;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 33;
+}
+#popup #closepopup {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+#popup .content {
+  max-width: 500px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px 20px;
+}
+
+#sideBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 33;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+}
+#sideBar .closeSideBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#sideBar.show {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+#sideBar .box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 400px;
+  width: 80%;
+  height: 100vh;
+  overflow: auto;
+  background: #fff;
+  box-shadow: -15px 8px 15px rgba(0, 0, 0, 0.0588235294);
+  z-index: 2;
+}
+#sideBar .box::-webkit-scrollbar {
+  width: 0;
+}
+#sideBar .box .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e70303;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 0 50px 50px 0;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2117647059) inset;
+}
+#sideBar .box li {
+  display: block;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.0392156863);
+  transition: 0.5s ease-in-out;
+}
+#sideBar .box .dFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+#sideBar .box .dFlex .col,
+#sideBar .box .dFlex .rowCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sideBar .box .dFlex .rowCol {
+  flex-direction: column;
+  align-items: start;
+}
+#sideBar .box h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  position: relative;
+  padding: 0 0 15px;
+}
+#sideBar .box h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.0784313725);
+}
+#sideBar .box .content {
+  padding: 25px 30px;
+}
+#sideBar .box .content h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 0;
+}
+#sideBar .box .content h4::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.568627451);
+}
+#sideBar .box .content img {
+  width: 25px;
+  margin-right: 10px;
+}
+#sideBar .box .content span {
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+#sideBar .box .content strong {
+  margin-bottom: 5px;
+}
+#sideBar .box li:hover {
+  box-shadow: none;
+  border: 1px solid #ffffff;
+}
+
+.roomDetail {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.roomDetail::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #bf0000;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+.roomDetail:hover {
+  border: 1px solid #bf0000;
+  color: #fff;
+}
+.roomDetail:hover::before {
+  transform: translateX(0);
+}
+
+.tableLine td,
+.tableLine th {
+  border-left: 1px solid #e9ecef;
+  position: relative;
+}
+.tableLine .bookRoom {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0 10px;
+}
+
+table .tableHoverShow {
+  display: none;
+}
+table .tableIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+table .tableIcon i {
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+}
+table td {
+  transition: 0.3s ease-in-out;
+}
+table tr .tableCenter {
+  width: 100%;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table tr .tableHide {
+  display: block;
+}
+table tr:hover td {
+  background: #f5f5f5;
+}
+table tr:hover .tableHide {
+  display: none;
+}
+table tr:hover .tableHoverShow {
+  display: block;
+}
+
+#manage_room td {
+  height: 100px;
+}
+
+.dashboardCard {
+  padding: 0;
+}
+.dashboardCard li {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 5px 0;
+  border-right: 1px dashed #cdcdcd;
+}
+.dashboardCard li:last-child {
+  border-right: none;
+}
+
+#topNavBar .toggleNav {
+  margin-right: 10px;
+}
+#topNavBar .quickLink {
+  border-right: 1px solid #cfcfcf;
+  padding-right: 10px;
+}
+#topNavBar li:not(.toggleNav) {
+  padding: 0 5px;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+#topNavBar li:not(.toggleNav) a {
+  padding: 0.3rem 1rem;
+}
+#topNavBar li:not(.toggleNav).active {
+  background: #e5e5e5;
+}
+#topNavBar li:not(.toggleNav):hover {
+  background: #e5e5e5;
+}
+
+#dashboardCard .card {
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  width: 100%;
+}
+#dashboardCard .card.cardBig {
+  height: calc(250px + 1.5rem);
+}
+#dashboardCard .card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#dashboardCard .card .card-body .row {
+  width: 100%;
+  margin: 0;
+}
+#dashboardCard .card .card-body .row div {
+  padding: 0;
+}
+
+#addBookingPopUpBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 30;
+  display: none;
+}
+#addBookingPopUpBox.show {
+  display: block;
+}
+#addBookingPopUpBox .closePopUpBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.78);
+}
+#addBookingPopUpBox .content {
+  position: absolute;
+  width: 65%;
+  background: #fff;
+  height: 80vh;
+  z-index: 31;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+#addBookingPopUpBox .content .closeContent {
+  width: 25px;
+  height: 25px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+#addBookingPopUpBox .content #addBookingForm {
+  padding: 0 20px;
+}
+#addBookingPopUpBox .content #addBookingForm .topCon {
+  padding: 20px 0;
+  height: 70vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+#addBookingPopUpBox .content #addBookingForm .BtmCon {
+  border-top: 1px solid rgba(0, 0, 0, 0.3215686275);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 20px;
+  height: 10vh;
+}
+#addBookingPopUpBox .content #addBookingForm .BtmCon button {
+  margin: 0;
+}
+#addBookingPopUpBox .content #guestExtraInformationBtn {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#addBookingPopUpBox .content .guestExtraInformation {
+  display: none;
+}
+#addBookingPopUpBox .content .guestExtraInformation.show {
+  display: flex;
+}
+#addBookingPopUpBox .content h5.priceDetailText {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3215686275);
+  padding: 5px 0;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+[11-Nov-2022 12:14:16 Asia/Kolkata] PHP Warning:  Undefined array key "gst" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/booking.php on line 652
+[11-Nov-2022 12:15:03 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 1571
+[11-Nov-2022 12:15:03 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 1572
+[11-Nov-2022 12:15:03 Asia/Kolkata] PHP Warning:  Undefined array key "gst" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/booking.php on line 652
+[21-Nov-2022 12:23:58 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 12:24:14 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 12:25:18 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 12:26:10 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 12:28:07 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 12:28:37 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 12:28:56 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 12:54:27 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 16:37:34 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 16:38:38 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 16:39:16 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 16:39:18 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 16:39:36 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[21-Nov-2022 16:39:50 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[23-Nov-2022 16:13:01 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[23-Nov-2022 16:13:36 Asia/Kolkata] PHP Warning:  Undefined array key "roomdesc" in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/ajax/room.php on line 364
+[24-Nov-2022 16:06:33 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 358
+[24-Nov-2022 16:06:33 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 358
+[24-Nov-2022 16:37:04 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 358
+[24-Nov-2022 16:37:04 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 358
+[24-Nov-2022 16:37:45 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 358
+[24-Nov-2022 16:37:45 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 358
+[24-Nov-2022 16:37:45 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 358
+[24-Nov-2022 16:37:45 Asia/Kolkata] PHP Warning:  Undefined variable $data in /home/retroxbe/test.retrod.in/aryapalace/booking/admin/include/function.php on line 358

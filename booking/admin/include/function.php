@@ -3570,12 +3570,37 @@ function getCounterData(){
 }
 
 
-function getGalleryType(){
+function getGalleryType($tid=''){
     global $conDB;
+    $query = "select * from gallerytype";
+    if($tid != ''){
+        $query .= " where id = '$tid'";
+    }
     $data = array();
-    $sql = mysqli_query($conDB, "select * from gallerytype");
+    $sql = mysqli_query($conDB, $query);
     while($row = mysqli_fetch_assoc($sql)){
-        $data[]= ['id'=>$row['id'],'name'=>$row['name']];
+        $data[]= $row;
+    }
+    return $data;
+}
+
+function getGallery($tid='',$gid='',$limit=''){
+    global $conDB;
+    $query = "select * from gallery where id != ''";
+    if($tid != ''){
+        $query .= " and id = '$gid'";
+    }
+    if($tid != ''){
+        $query .= " and type = '$tid'";
+    }
+    if($limit != ''){
+        $query .= " limit $limit";
+    }
+
+    $data = array();
+    $sql = mysqli_query($conDB, $query);
+    while($row = mysqli_fetch_assoc($sql)){
+        $data[]= $row;
     }
     return $data;
 }

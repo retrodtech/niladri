@@ -3,7 +3,7 @@
 
         <h1 class="logo">
             <a href="index.html">
-                <img src="<?= FRONT_SITE_IMG.hotelDetail()['logo'] ?>" alt="<?= SITE_NAME ?> Logo">
+                <img src="<?= FRONT_SITE_IMG.hotelDetail()['logo2'] ?>" alt="<?= SITE_NAME ?> Logo">
             </a>
         </h1>
 
